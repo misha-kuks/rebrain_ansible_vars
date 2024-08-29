@@ -1,0 +1,6 @@
+---
+- name: Vars
+  hosts: all
+  tasks:
+  - debug:
+      var: my_list | sum

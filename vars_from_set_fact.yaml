@@ -1,0 +1,12 @@
+---
+- name: Vars
+  hosts: all
+  tasks:
+  - name: Set fact
+    set_fact:
+      my_list:
+        - 1
+        - 2
+        - 3
+  - debug:
+      var: my_list | sum
